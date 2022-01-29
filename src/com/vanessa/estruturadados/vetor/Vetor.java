@@ -1,5 +1,7 @@
 package com.vanessa.estruturadados.vetor;
 
+import java.util.Arrays;
+
 public class Vetor {
 
 	private String[] elementos;
@@ -41,10 +43,30 @@ public class Vetor {
 		return false;
 	}	
 	
+	public int tamanho() {
+		return this.tamanho;
+	}
+
 	
-	
-	
-	
-	
+	/* Nesta classe fazemos a iteração dos dados do vetor, e apresentamos na tela de acordo com o tamanho de dados preenchidos*/
+	@Override
+	public String toString() {
+		
+		StringBuilder s = new StringBuilder();
+		s.append("[");
+		
+		for (int i=0; i<this.tamanho-1; i++){
+			s.append(this.elementos[i]);
+			s.append(", ");
+		}
+		
+		if (this.tamanho>0) {
+			s.append(this.elementos[this.tamanho-1]);
+		}
+		
+		s.append("]");
+		
+		return s.toString();
+	}
 	
 }
