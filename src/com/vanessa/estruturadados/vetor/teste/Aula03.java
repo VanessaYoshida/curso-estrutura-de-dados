@@ -6,10 +6,24 @@ public class Aula03 {
 
 	public static void main(String[] args) {
 		
-		Vetor vetor = new Vetor(5);
+		
+		/*Utilizar o Try catch na opção 2 da classe Vetor
+		  		
+		  Vetor vetor = new Vetor(2);
+		  
+		  try {
+			vetor.adiciona("elemento 1");
+			vetor.adiciona("elemento 2");
+			vetor.adiciona("elemento 3");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}*/
+		
+		Vetor vetor = new Vetor(2);
 		
 		vetor.adiciona("elemento 1");
 		vetor.adiciona("elemento 2");
+		vetor.adiciona("elemento 3");
 
 	}
 
