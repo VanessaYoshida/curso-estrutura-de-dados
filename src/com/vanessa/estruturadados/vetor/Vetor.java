@@ -89,6 +89,17 @@ public class Vetor {
 		return this.elementos[posicao];
 	}
 	
+	//Remover elemento
+	public void remove(int posicao) {
+		if (!(posicao >= 0 && posicao < tamanho)) {
+			throw new IllegalArgumentException("Posição inválida");
+		}
+		for (int i=posicao; i<this.tamanho-1; i++) {
+			this.elementos[i] = this.elementos[i+1];
+		}
+		this.tamanho--;
+	}
+	
 	/* Verificar se elemento existe*/
 	public int busca(String elemento){
 		for (int i=0; i<this.tamanho; i++){
