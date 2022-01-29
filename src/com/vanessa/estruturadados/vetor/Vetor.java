@@ -45,6 +45,25 @@ public class Vetor {
 		return false;
 	}	
 	
+	// Add elemento em qualquer posição
+	public boolean adiciona(int posicao, String elemento){
+		
+		if (!(posicao >= 0 && posicao < tamanho)) {
+			throw new IllegalArgumentException("Posição inválida");
+		}
+		
+		//mover todos os elementos
+		for (int i=this.tamanho-1; i>=posicao; i--) {
+			this.elementos[i+1] = this.elementos[i];
+		}
+		
+		//atribuir o elemento na posição
+		this.elementos[posicao] = elemento;
+		this.tamanho++;
+
+		return true;
+	}	
+	
 	/* Obter elemento de uma determinada posição
 	 * Se for uma posição que não existe, dispara um erro tratado
 	 */
@@ -53,6 +72,16 @@ public class Vetor {
 			throw new IllegalArgumentException("Posição inválida");
 		}
 		return this.elementos[posicao];
+	}
+	
+	/* Verificar se elemento existe*/
+	public int busca(String elemento){
+		for (int i=0; i<this.tamanho; i++){
+			if (this.elementos[i].equals(elemento)) {
+				return i;
+			}
+		}
+		return -1;
 	}
 	
 	public int tamanho() {
