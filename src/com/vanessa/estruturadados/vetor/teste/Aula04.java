@@ -6,7 +6,9 @@ public class Aula04 {
 
 	public static void main(String[] args) {
 		
-		/*Nesta aula 04 vamos apresentar apenas os dados do vetor que contém valores, não iremos apresentar o que estiver null)*/
+		/* Verificar tamanho e imprimir elementos do vetor
+		 * Nesta aula 04 vamos apresentar apenas os dados do vetor que contém valores, 
+		 * não iremos apresentar o que estiver null)*/
 		
 		Vetor vetor = new Vetor(10);
 		
@@ -20,7 +22,7 @@ public class Aula04 {
 	}
 
 	/* Resultado apresentado no console:
-	   3
-	   [elemento 1, elemento 2, elemento 3]
+	 *   3
+	 *   [elemento 1, elemento 2, elemento 3]
 	 */
 }
