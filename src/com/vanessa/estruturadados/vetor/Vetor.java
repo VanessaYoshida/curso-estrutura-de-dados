@@ -45,6 +45,25 @@ public class Vetor {
 		return false;
 	}	
 	
+	// Add elemento em qualquer posição
+	public boolean adiciona(int posicao, String elemento){
+		
+		if (!(posicao >= 0 && posicao < tamanho)) {
+			throw new IllegalArgumentException("Posição inválida");
+		}
+		
+		//mover todos os elementos
+		for (int i=this.tamanho-1; i>=posicao; i--) {
+			this.elementos[i+1] = this.elementos[i];
+		}
+		
+		//atribuir o elemento na posição
+		this.elementos[posicao] = elemento;
+		this.tamanho++;
+
+		return true;
+	}	
+	
 	/* Obter elemento de uma determinada posição
 	 * Se for uma posição que não existe, dispara um erro tratado
 	 */
