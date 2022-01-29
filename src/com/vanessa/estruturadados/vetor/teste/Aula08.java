@@ -8,7 +8,7 @@ public class Aula08 {
 		
 		//Aumentar capacidade do vetor
 		
-Vetor vetor = new Vetor(3);
+		Vetor vetor = new Vetor(3);
 		
 		vetor.adiciona("B");
 		vetor.adiciona("C");
