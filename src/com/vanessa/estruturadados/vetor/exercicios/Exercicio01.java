@@ -16,8 +16,7 @@ public class Exercicio01 {
 			lista.adiciona("C");
 			
 			System.out.println(lista.contem("A")); //true
-			System.out.println(lista.contem("B")); //true
-			System.out.println(lista.contem("E")); //false
+			System.out.println(lista.contem("V")); //false
 				
 	}
 
