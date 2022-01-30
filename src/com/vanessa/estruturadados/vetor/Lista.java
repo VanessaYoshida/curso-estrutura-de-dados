@@ -83,6 +83,11 @@ public class Lista<T> {
 			return -1;
 		}
 		
+		/* Melhoria da busca - exercicio 01 */
+		public boolean contem(T elemento) {
+			return  busca(elemento) > -1; // >=0
+		}
+		
 		public int tamanho() {
 			return this.tamanho;
 		}
