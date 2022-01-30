@@ -1,10 +1,10 @@
-# Curso de Java - WomakersCode
+# Bootcamp de Back-end Java - WomakersCode
 
-## Bootcamp de Back-end Java - Curso de Estrutura de Dados ministrado pela Loiane Groner
+## Curso de Estrutura de Dados ministrado pela Loiane Groner
 
 [PT-BR] Código fonte apresentado no curso de Estrutura de Dados e Algoritmos com Java
 
-http://loiane.training
+Link do curso: http://loiane.training
 
 Playlist: https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBrgumpzz-l8kFMw2DLERdxi
 
