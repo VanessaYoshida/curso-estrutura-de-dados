@@ -16,8 +16,24 @@ public class Aula11 {
 
 		vetor.adiciona(c1);
 		
-
+		//Elemento existe no vetor
 		int pos = vetor.busca(c1);
+		if (pos > -1) {
+			System.out.println("Elemento existe no vetor");
+		} else {
+			System.out.println("Elemento não existe no vetor");
+		}
+		
+		//Elemento não existe no vetor porque não adicionei
+		pos = vetor.busca(c2);
+		if (pos > -1) {
+			System.out.println("Elemento existe no vetor");
+		} else {
+			System.out.println("Elemento não existe no vetor");
+		}
+		
+		//Elemento não existe no vetor porque não adicionei
+		pos = vetor.busca(c3);
 		if (pos > -1) {
 			System.out.println("Elemento existe no vetor");
 		} else {
