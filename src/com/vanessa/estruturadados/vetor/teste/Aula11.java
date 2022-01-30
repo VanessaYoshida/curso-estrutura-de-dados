@@ -1,8 +1,6 @@
 package com.vanessa.estruturadados.vetor.teste;
 
 import com.vanessa.estruturadados.vetor.Lista;
-import com.vanessa.estruturadados.vetor.VetorObjetos;
-
 public class Aula11 {
 
 	public static void main(String[] args) {
