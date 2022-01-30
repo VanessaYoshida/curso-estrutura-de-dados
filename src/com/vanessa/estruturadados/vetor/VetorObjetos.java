@@ -76,6 +76,17 @@ public class VetorObjetos {
 	public int tamanho() {
 		return this.tamanho;
 	}
+	
+	public void limpar() {
+		for (int i=0; i<this.tamanho; i++) {
+			this.elementos[i] = null;
+		}
+		this.tamanho = 0;
+		
+		/* Outro exemplo:
+		 * this.elementos = (T[]) new Object[this.elementos.length];
+		 */
+	}
 
 	
 	/* Verificar tamanho e imprimir elementos do vetor
