@@ -1,7 +1,15 @@
-# curso-estrutura-de-dados
+# Curso de Java - WomakersCode
+
 ## Bootcamp de Back-end Java - Curso de Estrutura de Dados ministrado pela Loiane Groner
 
-# Curso de Java - WomakersCode
+[PT-BR] Código fonte apresentado no curso de Estrutura de Dados e Algoritmos com Java
+
+http://loiane.training
+
+Playlist: https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBrgumpzz-l8kFMw2DLERdxi
+
+
+### Sobre a WomakersCode
 
 A WomakersCode é a maior comunidade de mulheres na tecnologia da América Latina.
 É uma instituição sem fins lucrativos, com a missão de inspirar e impulsionar meninas e mulheres que desejam ingressar ou se especializar em carreiras ligadas à tecnologia e inovação (STEM).
