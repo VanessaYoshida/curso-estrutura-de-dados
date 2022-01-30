@@ -86,10 +86,28 @@ public class Lista<T> {
 		/* Melhoria da busca - exercicio 01 */
 		public boolean contem(T elemento) {
 			return  busca(elemento) > -1; // >=0
+			
+			/*int pos = busca(elemento);
+			if (pos > -1){
+				return true;
+			}
+			
+			return false;*/
 		}
 		
 		public int tamanho() {
 			return this.tamanho;
+		}
+		
+		/* Implemente o método ultimoIndice, 
+		   semelhante ao método lastIndexOf da classe ArrayList */
+		public int ultimoIndice(T elemento) {
+			for (int i=this.tamanho-1; i>=0; i--) {
+				if (this.elementos[i].equals(elemento)){
+					return i;
+				} // >=0
+			}
+			return -1;
 		}
 
 		
