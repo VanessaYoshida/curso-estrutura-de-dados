@@ -8,8 +8,7 @@ Link do curso: http://loiane.training
 
 Playlist: https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBrgumpzz-l8kFMw2DLERdxi
 
-## Conteúdo do Curso
-## Estrutura de Dados com Java
+## Conteúdo do Curso de Estrutura de Dados
 ### Vetores, Arrays e Listas (03:41:58)
 - Introdução a Estrutura de Dados e Algoritmos
 - Vetores e Arrays: Introdução
