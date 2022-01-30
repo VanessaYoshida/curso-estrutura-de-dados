@@ -66,7 +66,7 @@ public class Lista<T> {
 	/* Obter elemento de uma determinada posição
 	 * Se for uma posição que não existe, dispara um erro tratado
 	 */
-	public Object busca(int posicao) {
+	public T busca(int posicao) {
 		if (!(posicao >= 0 && posicao < tamanho)) {
 			throw new IllegalArgumentException("Posição inválida");
 		}
@@ -93,6 +93,11 @@ public class Lista<T> {
 			}
 
 			return false;*/
+	}
+	
+	//Obter um elemento dada uma posição do vetor
+	public T obtem(int posicao) {
+		return this.busca(posicao);
 	}
 
 	public int tamanho() {
