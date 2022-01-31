@@ -1,9 +1,10 @@
 package com.vanessa.estruturadados.base;
 
 public class EstruturaEstatica<T> {
-	private T[] elementos;
-	private int tamanho;
+	protected T[] elementos;
+	protected int tamanho;
 
+	@SuppressWarnings("unchecked")
 	public EstruturaEstatica(int capacidade) {
 		this.elementos = (T[]) new Object[capacidade];
 		this.tamanho = 0;
@@ -13,8 +14,11 @@ public class EstruturaEstatica<T> {
 		this(10);
 	}
 
-	protected boolean adiciona(T elemento){
+	public boolean estaVazia(){
+		return this.tamanho == 0;
+	}
 
+	protected boolean adiciona(T elemento){
 		this.aumentaCapacidade();
 
 		if (this.tamanho < this.elementos.length) {
@@ -26,7 +30,6 @@ public class EstruturaEstatica<T> {
 	}	
 
 	protected boolean adiciona(int posicao, T elemento){
-
 		if (!(posicao >= 0 && posicao < tamanho)) {
 			throw new IllegalArgumentException("Posição inválida");
 		}
@@ -44,9 +47,20 @@ public class EstruturaEstatica<T> {
 
 		return true;
 	}	
+	
+	protected void remove(int posicao){
+		if (!(posicao >= 0 && posicao < tamanho)){
+			throw new IllegalArgumentException("Posicao inválida");
+		}
+		for (int i=posicao; i<tamanho-1; i++){
+			elementos[i] = elementos[i+1];
+		}
+		tamanho--;
+	}
 
-	public void aumentaCapacidade() {
+	private void aumentaCapacidade() {
 		if (this.tamanho == this.elementos.length) {
+			@SuppressWarnings("unchecked")
 			T[] elementosNovos = (T[]) new Object[this.elementos.length*2];
 			for (int i=0; i<this.elementos.length; i++) {
 				elementosNovos[i] = this.elementos[i];
