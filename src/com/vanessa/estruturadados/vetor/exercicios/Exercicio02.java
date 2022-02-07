@@ -10,14 +10,18 @@ public class Exercicio02 {
 		/* Melhore a classe Lista e implemente o método ultimoIndice, 
 		   semelhante ao método lastIndexOf da classe ArrayList */
 		
-		Lista<String> lista = new Lista<String>(5);
+		Lista<String> lista = new Lista<String>(7);
 		
 		lista.adiciona("V");
 		lista.adiciona("A");
-		lista.adiciona("V");
+		lista.adiciona("N");
+		lista.adiciona("E");
+		lista.adiciona("S");
+		lista.adiciona("S");
+		lista.adiciona("A");
 		
 		System.out.println(lista.ultimoIndice("a")); // -1 => Não existe
-		System.out.println(lista.ultimoIndice("V")); //  2 => existe no índice 2
+		System.out.println(lista.ultimoIndice("A")); //  6 => existe no índice 6
 		
 		
 		//Se fosse usar o método IndexOf
@@ -27,7 +31,7 @@ public class Exercicio02 {
 		arrayList.add("A");
 		arrayList.add("V");
 		
-		System.out.println(arrayList.lastIndexOf("V")); 
+		System.out.println(arrayList.lastIndexOf("V")); // 2 => existe no índice 2
 	}
 
 }
