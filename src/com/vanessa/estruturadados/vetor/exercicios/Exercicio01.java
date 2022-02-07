@@ -11,12 +11,12 @@ public class Exercicio01 {
 
 		Lista<String> lista = new Lista<String>(5);
 			
+			lista.adiciona("V");
 			lista.adiciona("A");
-			lista.adiciona("B");
-			lista.adiciona("C");
+			lista.adiciona("N");
 			
 			System.out.println(lista.contem("A")); //true
-			System.out.println(lista.contem("V")); //false
+			System.out.println(lista.contem("E")); //false
 				
 	}
 
